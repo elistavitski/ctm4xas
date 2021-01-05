@@ -1,0 +1,11 @@
+function axesSetTitleAxesLabels(handles_axes, axes_title,x_axis_label, y_axis_label,z_axis_label)
+if nargin<4, z_axis_label=''; end
+if ~isempty(axes_title), title(handles_axes, axes_title,'fontsize',10,'fontweight','b'); end
+if ~isempty(x_axis_label), xlabel(handles_axes, x_axis_label,'fontsize',10,'fontweight','b'); end
+if ~isempty(y_axis_label), ylabel(handles_axes, y_axis_label,'fontsize',10,'fontweight','b'); end
+if ~isempty(z_axis_label), zlabel(handles_axes, z_axis_label,'fontsize',10,'fontweight','b'); end
+
+
+
+    
+

@@ -1,0 +1,11 @@
+function new_limits=axesSetLimits3D(handles_axes, new_limits)
+old_limits=axis(handles_axes);
+new_limits(isnan(new_limits))=old_limits(isnan(new_limits));
+axis(handles_axes,new_limits);
+%handle axis
+surf_handle=get(handles_axes,'Children');
+
+
+
+    
+

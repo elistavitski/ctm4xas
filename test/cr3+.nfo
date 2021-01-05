@@ -1,0 +1,30 @@
+Filename:	 cr3+.rcg
+Ion:		 Cr3+
+Spectrum:	 2p XAS
+Binding energy (eV):	 578.8
+ 
+F2dd:		 8.622 (100%)	  9.277 (100%)
+F4dd:		 5.404 (100%)	  5.816 (100%)
+LS3d:		 0.035 (100%)	  0.047 (100%)
+LS2p:				  5.667 (100%)
+F2pd:				  5.221 (100%)
+G1pd:				  3.830 (100%)
+G3pd:				  2.178 (100%)
+ 
+10Dq:		   2.0 		    2.0
+Dt:		   0.0 		    0.0
+Ds:		   0.0 		    0.0
+M(meV):		   0.0 		    0.0
+Delta:		   0.0
+Udd:		   0.0
+Upd:		   0.0
+T (b1):		   2.0
+T (b2):		   1.0
+T (a1):		   2.0
+T (e):		   1.0
+Lorenz:		   0.2
+Gauss:		   0.2
+ 
+Nov.20,2010 18:04:51
+CTM4XAS 5.2 output file
+(C) Eli Stavitski and Frank de Groot, Utrecht University

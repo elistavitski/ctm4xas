@@ -1,0 +1,22 @@
+function struc_out=remove_struc(struc_in, indx2remove)
+    if ~isempty(struc_in)
+        struc_len=length(struc_in); 
+        if numCurrMaps==1,
+            struc_out=[];
+            currMapIndx=1;
+        elseif indx2remove==struc_len,
+            for jj=1:indx2remove-1,
+                struc_out{jj}=struc_in{jj};
+            end
+        else
+           for jj=1:indx2remove-1,
+                struc_out{jj}=struc_in{jj};
+           end
+           for jj=indx2remove+1:struc_len,
+               struc_out{jj}=struc_in{jj};
+
+           end
+      
+        end
+        handles=updatedatasetListbox(handles,currMapIndx);        
+    end

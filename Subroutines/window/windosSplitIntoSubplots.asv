@@ -1,0 +1,12 @@
+function handles_subplots=windowsSplitIntoSubplots(handle_window,n_subplots)
+size_old=get(handle_window,'Position');
+n_subplots_old=length(get(handle_window,'Children'));
+m_old=ceil(sqrt(n_subplots_old)); n_old=ceil(n_subplots_old/m_old);
+m_new=ceil(sqrt(n_subplots)); n_new=ceil(n_subplots/m_new);
+factor_m=m_new/m_old;
+factor_n=n_new/n_old;
+
+set(handle_window,'Position',[size_olde(1) size_old(2)...
+    size_old(3)*factor_m size_old(4)*factor_n]);
+
+12

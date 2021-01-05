@@ -1,0 +1,19 @@
+function struc_out=remove_struc(struc_in, indx2remove)
+    struc_out=[];
+    if ~isempty(struc_in)
+        struc_len=length(struc_in); 
+        if struc_len==1,
+            struc_out=[];
+        elseif indx2remove==struc_len,
+            for jj=1:indx2remove-1,
+                struc_out{jj}=struc_in{jj};
+            end
+        else
+           for jj=1:indx2remove-1,
+                struc_out{jj}=struc_in{jj};
+           end
+           for jj=indx2remove+1:struc_len,
+               struc_out{jj-1}=struc_in{jj};
+           end
+        end    
+    end

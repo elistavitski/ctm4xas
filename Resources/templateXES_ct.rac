@@ -1,0 +1,176 @@
+Y
+    % vertical 1 1
+ racer O3
+ to    Oh
+ to    D4h
+ to    C4h
+ endchain
+ actor   1- left        transi
+   oper MULTIPOLE
+     branch  1- > 0 1- >  1- >  1-  1.000
+ actor  -1- right       transi
+   oper MULTIPOLE
+     branch  1- > 0 1- >  1- > -1-  1.000
+ actor   0- parallel    transi
+   oper MULTIPOLE
+     branch  1- > 0 1- > ^0- >  0-  1.000
+ actor   0+ HAMILTONIAN ground
+ actor   0+ 10Dq        ground
+ actor   0+ Dt          ground
+ actor   0+ Ds          ground
+ actor   0+ spin        ground
+ actor   0+ HAMILTONIAN excite
+ actor   0+ 10Dq        excite
+ actor   0+ Dt          excite
+ actor   0+ Ds          excite
+actor   0+ spin        excite
+RUN
+      % vertical 2 2
+ racer O3
+ to    Oh
+ to    D4h
+ to    C4h
+ endchain
+ actor   1- left        transi
+   oper MULTIPOLE
+     branch  1- > 0 1- >  1- >  1-  1.000
+ actor  -1- right       transi
+   oper MULTIPOLE
+     branch  1- > 0 1- >  1- > -1-  1.000
+ actor   0- parallel    transi
+   oper MULTIPOLE
+     branch  1- > 0 1- > ^0- >  0-  1.000
+ actor   0+ HAMILTONIAN ground
+ actor   0+ 10Dq        ground
+ actor   0+ Dt          ground
+ actor   0+ Ds          ground
+actor   0+ spin        ground
+actor   0+ HAMILTONIAN excite
+ actor   0+ 10Dq        excite
+ actor   0+ Dt          excite
+ actor   0+ Ds          excite
+actor   0+ spin        excite
+RUN
+     % horizontal ground   1 2
+ racer O3
+ to    Oh
+ to    D4h
+ to    C4h
+ endchain
+  ACTOR   0+ B1hybr      transi
+   OPER   MULTIPOLE 
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.4472135955
+ BRANCH  4+ > 0 0+  > 0+ > 0+   1.643167673
+ BRANCH  4+ > 0 2+  > 0+ > 0+  -1.388730150
+ BRANCH  2+ > 0 2+  > 0+ > 0+  -1.195228609
+  ACTOR   0+ A1hybr      transi
+   OPER   MULTIPOLE
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.4472135955
+ BRANCH  4+ > 0 0+  > 0+ > 0+   1.643167673
+ BRANCH  4+ > 0 2+  > 0+ > 0+  +1.388730150
+ BRANCH  2+ > 0 2+  > 0+ > 0+  +1.195228609
+  ACTOR   0+ B2hybr      transi
+   OPER   MULTIPOLE
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.4472135955
+ BRANCH  4+ > 0 0+  > 0+ > 0+  -1.095445115
+ BRANCH  4+ > 0 2+  > 0+ > 0+  +1.851640200
+ BRANCH  2+ > 0 2+  > 0+ > 0+  -1.195228609
+  ACTOR   0+ Ehybr      transi
+   OPER   MULTIPOLE
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.8944271910
+ BRANCH  4+ > 0 0+  > 0+ > 0+  -2.190890230
+ BRANCH  4+ > 0 2+  > 0+ > 0+  -1.851640200
+ BRANCH  2+ > 0 2+  > 0+ > 0+  +1.195228609
+ actor   0+ HAMILTONIAN ground
+   oper     HAMILTONIAN
+     branch  0+ > 0 0+ >  0+ >  0+  1.000
+ actor   0+ 10Dq        ground
+   oper     Shell2
+     branch  4+ > 0 0+ >  0+ >  0+  3.286335345
+ actor   0+ Dt          ground
+   oper Shell2
+   BRANCH 4+ > 0 2+ > 0+ > 0+  -16.2019 
+ actor   0+ Ds          ground
+   oper Shell2
+    BRANCH 2+ > 0 2+ > 0+ > 0+     -8.3666
+ actor   0+ SPIN        ground
+   oper     SPIN2
+     branch  1+ > 0 1+ > ^0+ >  0+  1.0
+actor   0+ HAMILTONIAN excite
+   oper     HAMILTONIAN
+     branch  0+ > 0 0+ >  0+ >  0+  1.000
+ actor   0+ 10Dq        excite
+   oper     Shell2
+     branch  4+ > 0 0+ >  0+ >  0+  3.286335345
+ actor   0+ Dt          excite
+   oper Shell2
+   BRANCH 4+ > 0 2+ > 0+ > 0+  -16.2019 
+ actor   0+ Ds          excite
+   oper Shell2
+    BRANCH 2+ > 0 2+ > 0+ > 0+     -8.3666
+ actor   0+ SPIN        excite
+   oper     SPIN2
+     branch  1+ > 0 1+ > ^0+ >  0+  1.0
+   RUN
+    %  horizontal excite 1 2
+  racer O3
+ to    Oh
+ to    D4h
+ to    C4h
+ endchain
+  ACTOR   0+ B1hybr      transi
+   OPER   MULTIPOLE 
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.4472135955
+ BRANCH  4+ > 0 0+  > 0+ > 0+   1.643167673
+ BRANCH  4+ > 0 2+  > 0+ > 0+  -1.388730150
+ BRANCH  2+ > 0 2+  > 0+ > 0+  -1.195228609
+  ACTOR   0+ A1hybr      transi
+   OPER   MULTIPOLE
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.4472135955
+ BRANCH  4+ > 0 0+  > 0+ > 0+   1.643167673
+ BRANCH  4+ > 0 2+  > 0+ > 0+  +1.388730150
+ BRANCH  2+ > 0 2+  > 0+ > 0+  +1.195228609
+  ACTOR   0+ B2hybr      transi
+   OPER   MULTIPOLE
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.4472135955
+ BRANCH  4+ > 0 0+  > 0+ > 0+  -1.095445115
+ BRANCH  4+ > 0 2+  > 0+ > 0+  +1.851640200
+ BRANCH  2+ > 0 2+  > 0+ > 0+  -1.195228609
+  ACTOR   0+ Ehybr      transi
+   OPER   MULTIPOLE
+ BRANCH  0+ > 0 0+  > 0+ > 0+   0.8944271910
+ BRANCH  4+ > 0 0+  > 0+ > 0+  -2.190890230
+ BRANCH  4+ > 0 2+  > 0+ > 0+  -1.851640200
+ BRANCH  2+ > 0 2+  > 0+ > 0+  +1.195228609
+ actor   0+ HAMILTONIAN ground
+   oper     HAMILTONIAN
+     branch  0+ > 0 0+ >  0+ >  0+  1.000
+ actor   0+ 10Dq        ground
+   oper     Shell2
+     branch  4+ > 0 0+ >  0+ >  0+  3.286335345
+ actor   0+ Dt          ground
+   oper Shell2
+   BRANCH 4+ > 0 2+ > 0+ > 0+  -16.2019 
+ actor   0+ Ds          ground
+   oper Shell2
+    BRANCH 2+ > 0 2+ > 0+ > 0+     -8.3666
+ actor   0+ SPIN        ground
+   oper     SPIN2
+     branch  1+ > 0 1+ > ^0+ >  0+  1.0
+actor   0+ HAMILTONIAN excite
+   oper     HAMILTONIAN
+     branch  0+ > 0 0+ >  0+ >  0+  1.000
+ actor   0+ 10Dq        excite
+   oper     Shell2
+     branch  4+ > 0 0+ >  0+ >  0+  3.286335345
+ actor   0+ Dt          excite
+   oper Shell2
+   BRANCH 4+ > 0 2+ > 0+ > 0+  -16.2019 
+ actor   0+ Ds          excite
+   oper Shell2
+    BRANCH 2+ > 0 2+ > 0+ > 0+     -8.3666
+ actor   0+ SPIN        excite
+   oper     SPIN2
+     branch  1+ > 0 1+ > ^0+ >  0+  1.0
+RUN
+

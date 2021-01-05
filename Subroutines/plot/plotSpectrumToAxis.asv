@@ -1,0 +1,8 @@
+function handles_axes=plotSpectrumToAxis(spectra,handles_axes)
+if nargin<2,
+    figure;
+    handles_axes=axes; 
+end
+for jj=1:length(spectra)
+    plot(handles_axes
+end

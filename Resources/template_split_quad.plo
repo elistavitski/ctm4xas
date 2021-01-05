@@ -1,0 +1,13 @@
+lorentzian  0 0 range
+lorentzian  0 0 range
+gaussian    0
+portrait
+xy temp_0.dat
+spectrum operator 0+  shift 0.0
+xy temp_2.dat
+spectrum operator 2+  shift 0.0
+xy temp_1.dat
+spectrum operator 1+  shift 0.0
+xy temp_1n.dat
+spectrum operator -1+ shift 0.0
+end

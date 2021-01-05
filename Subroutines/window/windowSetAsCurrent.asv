@@ -1,0 +1,8 @@
+function windowSetAsCurrent(window_handle)
+try 
+    get(window_handle)
+catch
+    errordlg('Invalid window handle.','Error');
+    return
+end
+set(0,'CurrentFigure',window_handle);

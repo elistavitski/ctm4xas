@@ -1,0 +1,20 @@
+function setControlIcon(C_tag,icons)
+do_not_Set=
+
+if iscell(C_tag),
+    if length(C_tag)~=length(icons),
+        disp('Dimensions mismatch');
+    else
+        for jj=1:length(C_tag),
+          try   get(findobj('Tag',C_tag{jj}),'CData')
+          catch
+              do_not_set=1;
+          end
+          if ~do_not_set
+          set(findobj('Tag',C_tag{jj}),'CData',icons{jj});
+          end
+        end
+    end
+else
+     set(findobj('Tag',C_tag),'CData',icons);
+end

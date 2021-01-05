@@ -1,0 +1,30 @@
+Filename:	 Ni2+ 10Dq 0.0.rcg
+Ion:		 Ni2+
+Spectrum:	 2p XAS
+Binding energy (eV):	 858.5
+ 
+F2dd:		 9.787 (100%)	  0.000 (100%)
+F4dd:		 6.078 (100%)	  0.000 (100%)
+LS3d:		 0.042 (50%)	  0.051 (50%)
+LS2p:				  5.753 (50%)
+F2pd:				  6.177 (100%)
+G1pd:				  4.630 (100%)
+G3pd:				  2.633 (100%)
+ 
+10Dq:		   0.0 		    0.0
+Dt:		   0.0 		    0.0
+Ds:		   0.0 		    0.0
+M(meV):		   0.0 		    0.0
+Delta:		   0.0
+Udd:		   0.0
+Upd:		   0.0
+T (b1):		   2.0
+T (b2):		   1.0
+T (a1):		   2.0
+T (e):		   1.0
+Lorenz:		   0.2
+Gauss:		   0.2
+ 
+Nov.16,2010 18:47:05
+CTM4XAS 5.2 output file
+(C) Eli Stavitski and Frank de Groot, Utrecht University

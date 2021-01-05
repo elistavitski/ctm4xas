@@ -1,0 +1,9 @@
+function spectra_out=spectrumTruncate(spectra_in,limits)
+if ~iscell(spectra_in), temp{1}=spectra_in; spectra_in=temp; end
+for jj=1:length(spectra_in)
+    if isstruct(spectra_in{jj})
+        12
+            limit_lo=findval_c(spectra_in{jj}.x,limits(1));
+            limit_hi=findval_c(spectra_in{jj}.x,limits(2));
+    end
+end

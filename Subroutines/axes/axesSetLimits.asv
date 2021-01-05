@@ -1,0 +1,7 @@
+function new_limits=axesSetLimits(handles_axes, new_limits)
+old_limits=set(handles_axes,'XDir','reverse');
+for jj=1:4,
+    if isnan(new_limits(jj)), new_limits(jj)=old_limits(jj); end
+end
+    
+

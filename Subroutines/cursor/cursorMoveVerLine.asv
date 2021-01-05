@@ -1,0 +1,6 @@
+function cursorMoveVerLine(cursor_handle, new_position)
+api = iptgetapi(cursor_handle);
+position=api.getPosition();
+position(1,1)=new_position;
+position(2,1)=new_position;
+api.setPosition(position);

@@ -1,0 +1,12 @@
+lorentzian 0.10 999.00
+gaussian 0.10
+energy_range 0.00 5000.00
+old_racah 
+portrait
+xy temp_left.dat
+spectrum operator 1- 
+xy temp_right.dat
+spectrum operator -1- 
+xy temp_zero.dat
+spectrum operator 0- 
+end
